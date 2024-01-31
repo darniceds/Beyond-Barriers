@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+   
+    
+        <style>
+        body {
+    margin: 100px 0 0; /* Shift body text downwards */
+    font-family: Arial, sans-serif;
+    font-size: relative; /* Adjust the font size as needed */
+    text-align: center;
+    background-color: #16183F; /* Change background color */
+}
+
+        
+        .centered-links {
+            margin-bottom: -50px; /* Increase margin for space */
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px; /* Add padding to the container */
+            box-sizing: border-box;
+            text-align: left;
+        }
+        .left-column {
+            width: 40%;
+        }
+        .right-column {
+            width: 55%;
+        }
+        h1 {
+            margin-top: 100;
+        }
+        p {
+            margin-top: 100;
+            margin-bottom: 30px; /* Increase margin bottom for space */
+        }
+        .vertical-list li {
+            margin-bottom: 10px; /* Add space between list items */
+        
+        /* Style the links to appear as normal text */
+        .list2 a {
+            text-decoration: none;
+            color: #cc0d0d; /* Change color to match regular text */
+            cursor: pointer; /* Change cursor on hover */
+            margin-bottom: 100px; /* Add space between list items */
+      
+        /* Slideshow CSS */
+        .slideshow-container {
+            width: 100%; /* Make the slideshow container span the width of the page */
+            position: relative;
+            margin: auto;
+            margin-top: 20px; /* Adjust as needed */
+        }
+        .slideshow-container img {
+            width: 100%; /* Make the slideshow images span the width of the container */
+            display: none;
+        }
+        .slideshow-container img:first-child {
+            display: block;
+        }
+    </style>
+    <title>www.huping.de</title>
+</head>
+<FONT BODY COLOR="white">
+<body>
+    
+    
+    <div class="centered-links;" style="center"> <!-- Adjust margin-top as needed -->
+        <ul class="list1">
+            <a> <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\bblogo.png" alt="First Logo"></a>
+            <a style="margin-right: 50px;">Home</a>
+            <a style="margin-right: 50px;">About Us</a>
+            <a style="margin-right: 50px;">Phone</a>
+            <a style="margin-right: 50px;">Info</a>
+            <a style="margin-right: 50px;">How To Find Us</a>
+            <a style="margin-right: 50px;">Languages</a>
+            <a style="margin-right: 50px;">Products</a>
+            <a style="margin-right: 50px;">Order</a>
+            <a><img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\log in logo.png" alt="Second Logo"></a>
+        </ul>
+    </div>
+    
+    
+    
+    
+   
+
+
+
+
+
+
+   <div class="slideshow-container" style="width: 100%; height: 10%;">
+        <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\image_png (8).png" alt="Slide 1" style="width: 100%" >
+        <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\image_png (7).png" alt="Slide 2" style="width: 100%;" >
+        <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\blk woman.jpeg" alt="Slide 3"  style="width: 100%;">
+        <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\image_png (10).png" alt="Slide 4" style="width: 100%;">
+    </div>
+ 
+   
+    
+<script>
+    // JavaScript for slideshow functionality
+    let slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        let i;
+        const slides = document.querySelectorAll('.slideshow-container img');
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        setTimeout(carousel, 2000); // Change image every 2 seconds (2000 milliseconds)
+    }
+</script>
+
+    <div class="container">
+        <div class="left-column">
+            <h1>Our Story</h1>
+        </div>
+        <div class="right-column">
+            <p>In a world where language divides,
+                where words are lost in translation, there exists a shared experience among those who have felt the weight of silence, the frustration of misunderstanding.
+                 Beyond Barriers was born from this shared struggle, from the desire to bridge the gap and find connection amidst the chaos of linguistic diversity.</p>
+                
+                <p>Beyond Barriers was established in 2024. We are an international team of non native speaking expats.We have all had barriers related to language.
+                We wanted to create a tool which would give freedom and independence that we wish we had to the others coming behind us.</p>
+                
+                <p><strong> Be Independent. Be Free. Be Beyond Barriers.</strong></p>
+            
+        </div>
+    </div>
+<hr>
+<table style="width:100%">
+    <tr>
+      <th><strong><h1>Follow Us</h1></strong></th>
+      <th><strong><h1>Beyond Barriers</h1></strong></th>
+      <th><strong><h1>Support</h1></strong></th>
+      
+
+    </tr>
+    <tr>
+      <td><a><img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\facebook logo.png" alt="Facebook Logo"></a></td>
+      <td><strong><h2>Contact</h2></strong></td>
+      <td><strong><h2>FAQ</h2></strong></td>
+     
+    </tr>
+
+    <tr>
+        <td><a><img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\tik tok logo.png" alt="TikTok Logo"></a></td>
+        <td><strong><h2>Careers</h2></strong></td>
+        <td><strong><h2>Privacy Policy</h2></strong></td>
+        
+      </tr>
+
+      
+    <tr>
+        <td><a><img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\instagram logo.png" alt="Instagram Logo"></a></td>
+        <td><strong><h2></h2></strong></td>
+        <td><strong><h2>Contact Support</h2></strong></td>
+        
+      </tr>
+      <tr>
+        <td><a><img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\youtube logo.png" alt="Youtube Logo"></a></td>
+       
+    </tr>
+    
+  </table>
+</body>
+</html>  
+
