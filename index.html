@@ -4,181 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-   
-    
-        <style>
-        body {
-    margin: 100px 0 0; /* Shift body text downwards */
-    font-family: Arial, sans-serif;
-    font-size: relative; /* Adjust the font size as needed */
-    text-align: center;
-    background-color: #16183F; /* Change background color */
-}
-
-        
-        .centered-links {
-            margin-bottom: -50px; /* Increase margin for space */
-            text-align: center;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px; /* Add padding to the container */
-            box-sizing: border-box;
-            text-align: left;
-        }
-        .left-column {
-            width: 40%;
-        }
-        .right-column {
-            width: 55%;
-        }
-        h1 {
-            margin-top: 100;
-        }
-        p {
-            margin-top: 100;
-            margin-bottom: 30px; /* Increase margin bottom for space */
-        }
-        .vertical-list li {
-            margin-bottom: 10px; /* Add space between list items */
-        
-        /* Style the links to appear as normal text */
-        .list2 a {
-            text-decoration: none;
-            color: #cc0d0d; /* Change color to match regular text */
-            cursor: pointer; /* Change cursor on hover */
-            margin-bottom: 100px; /* Add space between list items */
-      
-        /* Slideshow CSS */
+    <title>www.huping.de</title>
+    <style>
+        /* Style for the slideshow container */
         .slideshow-container {
-            width: 100%; /* Make the slideshow container span the width of the page */
-            position: relative;
-            margin: auto;
-            margin-top: 20px; /* Adjust as needed */
+            width: 100%; /* Spanning the width of the webpage */
+            overflow: hidden; /* Prevent images from overflowing */
+            position: relative; /* Establishing a positioning context */
+            height: 100vh; /* Set height to 25% of the vertical view page */
         }
+
+        /* Style for the images within the slideshow */
         .slideshow-container img {
-            width: 100%; /* Make the slideshow images span the width of the container */
-            display: none;
+            width: 100%; /* Ensure images span the width of the container */
+            height: 100%; /* Ensure images fill the container vertically */
+            object-fit: cover; /* Prevent images from being stretched */
+            position: absolute; /* Position images absolutely within the container */
+            top: 0; /* Position images at the top of the container */
+            left: 0; /* Position images at the left of the container */
+            opacity: 0; /* Hide all images by default */
+            transition: opacity 0.5s ease; /* Add a transition effect */
         }
-        .slideshow-container img:first-child {
-            display: block;
+
+        /* Style for the active image */
+        .slideshow-container img.active {
+            opacity: 1; /* Show active image */
         }
     </style>
-    <title>www.huping.de</title>
 </head>
-<FONT BODY COLOR="white">
 <body>
-    
-    
-    <div class="centered-links;" style="center"> <!-- Adjust margin-top as needed -->
-        <ul class="list1">
-            <a> <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\bblogo.png" alt="First Logo"></a>
-            <a style="margin-right: 50px;">Home</a>
-            <a style="margin-right: 50px;">About Us</a>
-            <a style="margin-right: 50px;">Phone</a>
-            <a style="margin-right: 50px;">Info</a>
-            <a style="margin-right: 50px;">How To Find Us</a>
-            <a style="margin-right: 50px;">Languages</a>
-            <a style="margin-right: 50px;">Products</a>
-            <a style="margin-right: 50px;">Order</a>
-            <a><img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\log in logo.png" alt="Second Logo"></a>
+    <div class="fixed-navbar">
+        <img src="file:///C:/Users/Marie/Downloads/BEYOND_BARRIERS.svg" alt="Logo" class="logo">
+        <ul class="list2">
+            <li><a href="#" style="color: white;">Home</a></li>
+            <li><a href="#" style="color: white;">About Us</a></li>
+            <li><a href="#" style="color: white;">Products</a></li>
+            <li><a href="#" style="color: white;">Application Fields</a></li>
+            <li><a href="#" style="color: white;">Languages</a></li>
+            <li><a href="#" class="order-button">Order</a></li>
         </ul>
     </div>
-    
-    
-    
-    
-   
 
-
-
-
-
-
-   <div class="slideshow-container" style="width: 100%; height: 10%;">
-        <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\image_png (8).png" alt="Slide 1" style="width: 100%" >
-        <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\image_png (7).png" alt="Slide 2" style="width: 100%;" >
-        <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\blk woman.jpeg" alt="Slide 3"  style="width: 100%;">
-        <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\image_png (10).png" alt="Slide 4" style="width: 100%;">
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+        <img src="https://cdn.discordapp.com/attachments/1192471523940904961/1202905138461933648/0_0_21.png?ex=65cf27b5&is=65bcb2b5&hm=988a7eade98a8c687d61978c0b567b79de1c35047307a5ac5575b2ce0caa1fdc&" alt="Slide 1" class="active">
+        <img src="https://cdn.discordapp.com/attachments/1192471523940904961/1202912175115731015/0_3_7.png?ex=65cf2e43&is=65bcb943&hm=8d112dcb872ea4fd829d8ad8cfda8130d510389971632f7653f867c9d9d5e1cd&" alt="Slide 2" class="active">
+        <img src="https://cdn.discordapp.com/attachments/1192471523940904961/1202913076937236510/0_2_5.png?ex=65cf2f1a&is=65bcba1a&hm=a1c202bd81315c7036b20be6a047c3134da3c19e1395dd44088ffb6dae39387f&" alt="Slide 3" class="active">
+        <img src="https://cdn.discordapp.com/attachments/1192471523940904961/1201876354606567455/0_0_6.png?ex=65cb6994&is=65b8f494&hm=336eef945bbe486c8538822d5daddf6129d2788504e09cb4b4be9662eaf4f829&" alt="Slide 4" class="active">
     </div>
- 
-   
-    
-<script>
-    // JavaScript for slideshow functionality
-    let slideIndex = 0;
-    carousel();
 
-    function carousel() {
-        let i;
-        const slides = document.querySelectorAll('.slideshow-container img');
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = 'none';
+    <script>
+        // JavaScript for slideshow functionality
+        let slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            let i;
+            const slides = document.querySelectorAll('.slideshow-container img');
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = 'block';
+            setTimeout(carousel, 2000); // Change image every 2 seconds (2000 milliseconds)
         }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = 'block';
-        setTimeout(carousel, 2000); // Change image every 2 seconds (2000 milliseconds)
-    }
-</script>
+    </script>
 
     <div class="container">
         <div class="left-column">
-            <h1>Our Story</h1>
+            <h1>Beyond Barriers</h1>
         </div>
         <div class="right-column">
-            <p>In a world where language divides,
-                where words are lost in translation, there exists a shared experience among those who have felt the weight of silence, the frustration of misunderstanding.
-                 Beyond Barriers was born from this shared struggle, from the desire to bridge the gap and find connection amidst the chaos of linguistic diversity.</p>
-                
-                <p>Beyond Barriers was established in 2024. We are an international team of non native speaking expats.We have all had barriers related to language.
-                We wanted to create a tool which would give freedom and independence that we wish we had to the others coming behind us.</p>
-                
-                <p><strong> Be Independent. Be Free. Be Beyond Barriers.</strong></p>
-            
+            <p>Beyond Barriers emerged in response to the universal challenge of linguistic division, where communication falters and connections fray. Founded in 2024, we, an eclectic assembly of expatriates, share a collective narrative shaped by the struggle against language barriers.</p>
+            <p>Our genesis springs from a common quest to transcend linguistic confines, to foster unity amid the cacophony of diverse tongues. Drawing from our own encounters with language barriers, we envisioned a transformative tool to empower individuals navigating similar obstacles. As torchbearers of this vision, we aimed to fashion a beacon of freedom and independence, a legacy for those yet to embark on their linguistic odyssey.</p>
+            <p>The Universal Translator, a testament to our aspirations, embodies boundless potential. With its advent, envision:</p>
+            <ul class="vertical-list">
+                <li>Seamless real-time translations across languages, fostering fluid global communication.</li>
+                <li>Effortless cultural exchange, bridging divides and nurturing mutual understanding.</li>
+                <li>Simplified international travel, easing navigation and fostering authentic cross-cultural experiences.</li>
+                <li>Facilitation of cross-border commerce, enabling smooth transactions and expanding market reach.</li>
+            </ul>
+            <p>
+                As our journey unfolds, Beyond Barriers remains steadfast in its commitment to breaking down linguistic barriers and fostering meaningful connections across borders. Our Universal Translator stands as a beacon of innovation, offering solutions to the challenges of a diverse and interconnected world. With its transformative capabilities, we invite you to explore the endless possibilities it presents, from seamless communication to enhanced accessibility and cultural exchange. Discover how our product can revolutionize your interactions, empower your endeavors, and propel you toward new horizons. Join us on this extraordinary voyage, where language is no longer a barrier, but a gateway to boundless opportunity. Visit our website today to learn more about our revolutionary Universal Translator and embark on a journey of limitless connection.
+            </p>
+            <p><h1 class="enlarged-text">Be Independent. Be Free. Be Beyond Barriers</h1></p>
         </div>
     </div>
-<hr>
-<table style="width:100%">
-    <tr>
-      <th><strong><h1>Follow Us</h1></strong></th>
-      <th><strong><h1>Beyond Barriers</h1></strong></th>
-      <th><strong><h1>Support</h1></strong></th>
-      
-
-    </tr>
-    <tr>
-      <td><a><img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\facebook logo.png" alt="Facebook Logo"></a></td>
-      <td><strong><h2>Contact</h2></strong></td>
-      <td><strong><h2>FAQ</h2></strong></td>
-     
-    </tr>
-
-    <tr>
-        <td><a><img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\tik tok logo.png" alt="TikTok Logo"></a></td>
-        <td><strong><h2>Careers</h2></strong></td>
-        <td><strong><h2>Privacy Policy</h2></strong></td>
-        
-      </tr>
-
-      
-    <tr>
-        <td><a><img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\instagram logo.png" alt="Instagram Logo"></a></td>
-        <td><strong><h2></h2></strong></td>
-        <td><strong><h2>Contact Support</h2></strong></td>
-        
-      </tr>
-      <tr>
-        <td><a><img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\StartUp\youtube logo.png" alt="Youtube Logo"></a></td>
-       
-    </tr>
+   
+   
+   
+   
+   
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <ul style="list-style: none;">
+                        <strong>Follow Us</strong>
+                        <li><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' width='30' height='30' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6 9.28v.4c0 1.387-.333 2.72-1 4a8.186 8.186 0 0 1-2.84 3.12c-1.333.853-2.827 1.28-4.48 1.28a8.535 8.535 0 0 1-4.56-1.28h.72c1.387 0 2.613-.427 3.68-1.28-.64 0-1.213-.2-1.72-.6-.507-.4-.867-.92-1.08-1.56l.56.16c.373 0 .64-.053.8-.16a2.67 2.67 0 0 1-1.72-1 2.913 2.913 0 0 1-.68-1.88c.427.267.88.4 1.36.4-.907-.533-1.36-1.36-1.36-2.48 0-.533.133-1.04.4-1.52.8.96 1.72 1.707 2.76 2.24a8.133 8.133 0 0 0 3.4.88c-.107-.16-.16-.4-.16-.72 0-.8.293-1.493.88-2.08s1.28-.88 2.08-.88 1.547.293 2.24.88c.48-.107 1.12-.347 1.92-.72-.213.747-.64 1.28-1.28 1.6H18c.747-.16 1.28-.32 1.6-.48-.533.693-1.067 1.253-1.6 1.68z'/%3E%3C/svg%3E" alt="Follow Us Image 1"></li>
+                        <li><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath d='M29.48,15.09c0-8-6.48-14.48-14.48-14.48S0.52,7.09,0.52,15.09c0,7.23,5.3,13.22,12.22,14.31V19.27H9.06v-4.19h3.68V11.9c0-3.63,2.16-5.63,5.47-5.63c1.58,0,3.24,0.28,3.24,0.28v3.56h-1.83c-1.8,0-2.36,1.12-2.36,2.26v2.72h4.02l-0.64,4.19h-3.37v10.12C24.19,28.31,29.48,22.32,29.48,15.09L29.48,15.09z'/%3E%3C/svg%3E" alt="Follow Us Image 2"></li>
+                        <li><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' width='30' height='30' viewBox='0 0 24 24'%3E%3Cpath d='M16 12.48a4.723 4.723 0 0 1-.56 1.48 3.93 3.93 0 0 1-1.04 1.16 3.428 3.428 0 0 1-1.92.68 3.628 3.628 0 0 1-1.96-.48 3.414 3.414 0 0 1-1.4-1.48c-.48-.96-.587-1.973-.32-3.04H7.68l.08 5.52c0 .107.04.213.12.32.08.107.173.16.28.16h8.32c.107 0 .213-.053.32-.16.107-.107.16-.213.16-.32V10.8h-1.12c.16.533.213 1.093.16 1.68zm-3.68 2c.64 0 1.2-.24 1.68-.72s.72-1.053.72-1.72a2.56 2.56 0 0 0-.68-1.76c-.453-.507-1.013-.76-1.68-.76s-1.24.24-1.72.72-.72 1.053-.72 1.72.227 1.253.68 1.76c.453.507 1 .76 1.64.76h.08zm4.16-7.6h-1.12c-.107 0-.213.053-.32.16-.107.107-.16.213-.16.32v1.36c.107.213.267.32.48.32h1.12c.16 0 .28-.053.36-.16a.532.532 0 0 0 .12-.32v-1.2c0-.107-.053-.213-.16-.32-.107-.107-.213-.16-.32-.16zM12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6.24 16.88l-.08.08v.08a.926.926 0 0 1-.28.68 1.3 1.3 0 0 1-.68.36H7.52a.871.871 0 0 1-.68-.32 1.536 1.536 0 0 1-.36-.72l-.08-.16.08-9.84c0-.267.093-.507.28-.72.187-.213.413-.347.68-.4h9.68a1.3 1.3 0 0 1 .68.36 1.3 1.3 0 0 1 .36.68l.08 9.92z'/%3E%3C/svg%3E" alt="Follow Us Image 3"></li>
+                    </ul>
+                    
+                    
+                </td>
+                <td>
+                    <ul style="list-style: none;">
+                        <strong>Beyond Barriers</strong>
+                        <li>Contact</li>
+                        <li>Careers</li>
+                        <li>Media</li>
+                     
+                    </ul>
+                </td>
+                <td>
+                    <ul style="list-style: none;">
+                        <strong>Support</strong>
+                        <li>FAQ</li>
+                        <li>Privacy Policy</li>
+                        <li>Customer Support</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </footer>
     
-  </table>
 </body>
-</html>  
-
+</html>
