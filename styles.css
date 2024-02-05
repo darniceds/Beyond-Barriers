@@ -71,7 +71,7 @@ footer table td {
     width: 33.33%; /* Equal width for each column */
     text-align: center;
     padding: 0 10px; /* Adjust padding as needed */
-    margin-top: 800px; /* Decreased margin-top to lower the footer */
+    margin-top: 1000px; /* Decreased margin-top to lower the footer */
 }
 
 footer ul {
@@ -93,4 +93,3 @@ footer ul li {
 .enlarged.text {
     font-size: 15px;
 }
-
