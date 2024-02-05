@@ -1,0 +1,122 @@
+body{
+    background-color: #12163E;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+  }
+
+/* COVER PAGE: Container holding the image and the text */
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* COVER PAGE: Centered text */
+  .centered1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  a{
+    color: white;
+  }
+  
+  #img1{
+    width: 75%;
+  }
+
+  /* ORDER PAGE */
+
+  .container2 {
+    margin: 0 auto;
+    background-color: #0b1965;
+    width: 600px;
+  }
+
+ .image1orderform{
+  width: 15rem;
+  height: 15rem;
+ }
+
+ .container3{
+  display: flex;
+ }
+
+ .container3 > div {
+  margin: 10px;
+}
+#orange1{
+  background-color: #CB4628;
+
+}
+#orange2{
+  background-color: #CB4628;
+
+}
+#orange3{
+  background-color: #CB4628;
+
+}
+#lightblue, #couponstable{
+  background-color: #ACECEF;
+}
+
+#button1{
+  background-color: #ACECEF;
+  padding: 10px 50px;
+  font-size: 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.button2{
+  background-color: #CB4628;
+  color: white;
+  padding: 5px 50px;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.button2:hover {
+  border-color: silver;
+  font-weight: large;
+  color: #ACECEF;
+}
+
+form{
+  background-color: #ACECEF;
+  padding: 25px 25px;
+  border-radius: 10px;
+}
+.right{
+  text-align: right;
+  padding-right: 19px;
+  
+}
+.left{
+  text-align: left;
+  padding-left: 19px;
+}
+
+table{
+width: 100%;
+}
+
+#TOTAL{
+  background-color: #ACECEF;
+}
+#totalsum{
+  color: black;
+}
+
+h1, h2{
+  padding-left: 19px;
+}
+
+#couponsframe{
+  border-radius: 10px;
+  padding: 5px 5px;
+  text-align: center;
+  font-weight: bold;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Cart</title>
+    <link rel="stylesheet" href="stylepage5.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    
+<div id="header_content"></div>
+    <section class="container2">
+        <h1>Your Cart</h1>
+        <div class="container3">
+            <div class="slideshow-container">
+                <img id="myImg" class="image1orderform"src="imagespage5/cartimage2.png" alt="glasses">  
+            </div>
+            <div>
+                <h3>Glasses & Earphone</h3>
+                <p>Set of two pieces</p>
+                <p>$499</p>
+                <button id="button1"type="button">+ 1 -</button>
+            </div>
+        </div>
+
+        <script>
+            // JavaScript to change image
+            const myImg = document.getElementById("myImg");
+        
+        myImg.addEventListener("click", function() {
+          myImg.src = "imagespage5/cartimage1.png";
+        });
+        </script>
+
+        <h2>Apply Coupons</h2>
+
+        <table id="couponstable">
+
+            <tr>
+                <th class="left">
+                    <input type="email" id="couponsframe" name="email" value="Apply your coupon here">
+
+                </th>
+                <th class="right">
+                    <button class="button2" id="apply"type="button">Apply Now</button>
+                </th>
+           
+            
+          </table>
+
+        
+        <h2>Checkout</h2>
+        <div>
+            <table>
+                <tr>
+                    <th class="left">
+                        <p>Your Cart Subtotal:</p>
+
+                    </th>
+                    <th class="right">
+                        <p>$499</p>
+                    </th>
+
+                </tr>
+                <tr>
+                    <th class="left">
+                        <p>Discount through applied coupons</p>
+
+                    </th>
+                    <th class="right">
+                        <p>$0</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="left">
+                        <p>Shipping Fees</p>
+
+                    </th>
+                    <th class="right">
+                        <p>$50</p>
+                    </th>
+                </tr>
+                
+            </table>  
+            
+            <table id="TOTAL">
+               <tr>
+                <th class="left">
+                    <p id="totalsum">TOTAL: $549</p>
+                </th>
+                <th class="right">
+                    <button class="button2">Checkout</button>
+                </th>
+               </tr>
+            </table>
+            <div>
+               
+                
+                 
+            </div>
+        
+        </div>
+        
+    </section>
+
+<footer>
+    
+</footer>
+</body>
+</html>

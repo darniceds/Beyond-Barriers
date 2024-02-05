@@ -1,0 +1,141 @@
+
+
+/* THIS IS SCC FOR PRODUCT PAGE */
+
+body{
+    background-color: #0b1965;
+    color: white;
+}
+
+.header {
+    position: relative; /*pour que la navbar aille bien en haut*/
+    top: 0px; /*pour que la navbar se colle en haut */
+    height: 100px; /*pour que la navbar descende un peu*/
+    display: flex; /*pour que tout s'aligne*/
+    align-items: center; /*pour que tout s'aligne, au centre) */
+    background-color: #12163E;
+    width: 100%; /* width: 100%; pour que la navbar prenne toute la largeur*/
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #12163E;
+  }
+  
+  li {
+    display: inline;
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #12163E;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+
+  .section{
+    background-color: #12163E;
+  }
+
+  svg{
+    width: 94px;
+    height: 28px;
+    align-items: left;
+  }
+
+  .section
+  {
+   display: flex;
+   margin-top: 10px;
+   margin-bottom: 10px;
+  }
+
+  .section > div{
+   width: 100%;
+   margin: 5px;
+   text-align: center;
+   line-height: 50px;
+ 
+  }
+.imageinsection {
+    width: 40rem;
+    height: 40rem;
+}
+.logoandbutton{
+  margin-left: 10px;
+}
+
+
+.wrapper{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#logo{
+   width: 100px;
+}
+
+.button2{
+    background-color: #CB4628;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 60px;
+    font-weight: bold;
+    margin-right: 25px;
+  }
+
+  .button2:hover {
+    border-style: solid;
+    border-color: silver;
+    font-weight: bold;
+  }
+
+  footer{
+    background-color: #12163E;
+    width: 100%;
+    
+  }
+  footer p{
+    font-size: 10px;
+    text-align: center;
+  }
+  footer a{
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+  footer a:hover{
+    color: #CB4628;
+  }
+
+  footer th{
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+ footer i{
+    color: white;
+ }
+
+  table{
+    width: 100%;
+    }
+
+   .section th{
+    text-align: left;
+   } 

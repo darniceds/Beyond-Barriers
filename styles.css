@@ -93,3 +93,27 @@ footer ul li {
 .enlarged.text {
     font-size: 15px;
 }
+/* Style for the slideshow container */
+.slideshow-container {
+    width: 100%; /* Spanning the width of the webpage */
+    overflow: hidden; /* Prevent images from overflowing */
+    position: relative; /* Establishing a positioning context */
+    height: 100vh; /* Set height to 100% of the vertical viewport height */
+}
+
+/* Style for the images within the slideshow */
+.slideshow-container img {
+    width: 100%; /* Allow the width to adjust automatically */
+    height: 50%; /* Ensure images fill the container vertically */
+    object-fit: cover; /* Prevent images from being stretched */
+    position: absolute; /* Position images absolutely within the container */
+    top: 0; /* Position images at the top of the container */
+    left: 0; /* Position images at the left of the container */
+    opacity: 0; /* Hide all images by default */
+    transition: opacity 0.5s ease; /* Add a transition effect */
+}
+
+/* Style for the active image */
+.slideshow-container img.active {
+    opacity: 1; /* Show active image */
+}
